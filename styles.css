@@ -44,10 +44,67 @@ body.dark {
     background: linear-gradient(135deg, #161311 0%, #201c16 100%);
 }
 
+.loading-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+    background: rgba(10, 10, 10, 0.78);
+    backdrop-filter: blur(6px);
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.loading-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.loading-card {
+    background: var(--card-bg);
+    color: var(--text-main);
+    padding: 2rem;
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    min-width: min(90vw, 320px);
+}
+
+.loading-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.35rem;
+    margin: 0.5rem 0 0.7rem;
+}
+
+.loading-dots span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary);
+    display: inline-block;
+    animation: pulse 1s infinite ease-in-out;
+}
+
+.loading-dots span:nth-child(2) { animation-delay: 0.2s; }
+.loading-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+.loading-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
 .container {
     max-width: 1240px;
     margin: 0 auto;
     padding: 2rem;
+    opacity: 1;
+    transition: opacity 0.35s ease;
+}
+
+.container.is-ready {
+    opacity: 1;
 }
 
 header {
@@ -302,6 +359,11 @@ input:focus, select:focus {
     .main-grid {
         grid-template-columns: 1fr;
     }
+}
+
+@keyframes pulse {
+    0%, 80%, 100% { transform: scale(0.8); opacity: 0.5; }
+    40% { transform: scale(1); opacity: 1; }
 }
 
 @media (max-width: 600px) {

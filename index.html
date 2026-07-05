@@ -11,21 +11,6 @@
 <body>
     <div id="loading-screen" class="loading-screen" aria-live="polite">
         <div class="loading-card">
-            <div class="loading-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
-                    <defs>
-                        <linearGradient id="icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#4299E1" />
-                            <stop offset="100%" stop-color="#2B6CB0" />
-                        </linearGradient>
-                        <filter id="drop-shadow" x="-10%" y="-10%" width="120%" height="120%">
-                            <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.15" />
-                        </filter>
-                    </defs>
-                    <rect width="512" height="512" rx="115" fill="url(#icon-gradient)" />
-                    <path d="M256 130 L90 280 H140 V390 C140 401 149 410 160 410 H210 V310 H302 V410 H352 C363 410 372 401 372 390 V280 H422 Z" fill="#FFFFFF" filter="url(#drop-shadow)" />
-                </svg>
-            </div>
             <div class="loading-dots" aria-hidden="true">
                 <span></span>
                 <span></span>
@@ -38,24 +23,7 @@
     <div class="container">
         <header class="page-header">
             <div class="header-content">
-                <h1>
-                    <span class="brand-icon" aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
-                            <defs>
-                                <linearGradient id="brand-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#4299E1" />
-                                    <stop offset="100%" stop-color="#2B6CB0" />
-                                </linearGradient>
-                                <filter id="brand-shadow" x="-10%" y="-10%" width="120%" height="120%">
-                                    <feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#000000" flood-opacity="0.12" />
-                                </filter>
-                            </defs>
-                            <rect width="512" height="512" rx="115" fill="url(#brand-gradient)" />
-                            <path d="M256 130 L90 280 H140 V390 C140 401 149 410 160 410 H210 V310 H302 V410 H352 C363 410 372 401 372 390 V280 H422 Z" fill="#FFFFFF" filter="url(#brand-shadow)" />
-                        </svg>
-                    </span>
-                    Budget Tracker
-                </h1>
+                <h1>Budget Tracker</h1>
                 <p id="current-month" class="subtitle"></p>
             </div>
             <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">

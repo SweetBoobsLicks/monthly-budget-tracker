@@ -25,6 +25,20 @@ function init() {
     populateCategories();
     applyStoredTheme();
     updateUI();
+    setTimeout(hideLoadingScreen, 900);
+}
+
+function hideLoadingScreen() {
+    const loadingScreen = document.getElementById('loading-screen');
+    const appContainer = document.querySelector('.container');
+
+    if (loadingScreen) {
+        loadingScreen.classList.add('hidden');
+    }
+
+    if (appContainer) {
+        appContainer.classList.add('is-ready');
+    }
 }
 
 function applyStoredTheme() {
