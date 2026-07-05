@@ -12,36 +12,18 @@
     <div id="loading-screen" class="loading-screen" aria-live="polite">
         <div class="loading-card">
             <div class="loading-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
                     <defs>
                         <linearGradient id="icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#4AB5A0" />
-                            <stop offset="100%" stop-color="#2d8a7a" />
+                            <stop offset="0%" stop-color="#4299E1" />
+                            <stop offset="100%" stop-color="#2B6CB0" />
                         </linearGradient>
-                        <filter id="drop-shadow">
-                            <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.2" />
+                        <filter id="drop-shadow" x="-10%" y="-10%" width="120%" height="120%">
+                            <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.15" />
                         </filter>
                     </defs>
-                    <!-- Background -->
-                    <rect width="200" height="200" rx="45" fill="url(#icon-gradient)" />
-                    <!-- Curved arrow -->
-                    <path d="M 50 100 Q 80 60 110 70" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round" filter="url(#drop-shadow)" />
-                    <polygon points="110,70 125,45 135,75" fill="#ffffff" filter="url(#drop-shadow)" />
-                    <!-- Growth arrows -->
-                    <line x1="130" y1="85" x2="145" y2="70" stroke="#ffffff" stroke-width="6" stroke-linecap="round" filter="url(#drop-shadow)" />
-                    <polygon points="145,70 155,55 165,80" fill="#ffffff" filter="url(#drop-shadow)" />
-                    <!-- House with dollar sign -->
-                    <g filter="url(#drop-shadow)">
-                        <path d="M 70 140 L 70 100 L 55 85 L 55 100 L 40 100 L 40 145 L 100 145 L 100 100 L 85 100 L 85 140 Z" fill="#ffffff" />
-                        <text x="70" y="125" font-size="35" font-weight="bold" fill="#2d8a7a" text-anchor="middle" font-family="Arial">$</text>
-                    </g>
-                    <!-- Coins -->
-                    <g filter="url(#drop-shadow)">
-                        <circle cx="105" cy="155" r="10" fill="none" stroke="#ffffff" stroke-width="3" />
-                        <text x="105" y="158" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial">¢</text>
-                        <circle cx="125" cy="160" r="9" fill="none" stroke="#ffffff" stroke-width="2.5" />
-                        <text x="125" y="163" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial">$</text>
-                    </g>
+                    <rect width="512" height="512" rx="115" fill="url(#icon-gradient)" />
+                    <path d="M256 130 L90 280 H140 V390 C140 401 149 410 160 410 H210 V310 H302 V410 H352 C363 410 372 401 372 390 V280 H422 Z" fill="#FFFFFF" filter="url(#drop-shadow)" />
                 </svg>
             </div>
             <div class="loading-dots" aria-hidden="true">
@@ -58,36 +40,18 @@
             <div class="header-content">
                 <h1>
                     <span class="brand-icon" aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
                             <defs>
                                 <linearGradient id="brand-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#4AB5A0" />
-                                    <stop offset="100%" stop-color="#2d8a7a" />
+                                    <stop offset="0%" stop-color="#4299E1" />
+                                    <stop offset="100%" stop-color="#2B6CB0" />
                                 </linearGradient>
-                                <filter id="brand-shadow">
-                                    <feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#000000" flood-opacity="0.15" />
+                                <filter id="brand-shadow" x="-10%" y="-10%" width="120%" height="120%">
+                                    <feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#000000" flood-opacity="0.12" />
                                 </filter>
                             </defs>
-                            <!-- Background -->
-                            <rect width="200" height="200" rx="45" fill="url(#brand-gradient)" />
-                            <!-- Curved arrow -->
-                            <path d="M 50 100 Q 80 60 110 70" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round" filter="url(#brand-shadow)" />
-                            <polygon points="110,70 125,45 135,75" fill="#ffffff" filter="url(#brand-shadow)" />
-                            <!-- Growth arrows -->
-                            <line x1="130" y1="85" x2="145" y2="70" stroke="#ffffff" stroke-width="6" stroke-linecap="round" filter="url(#brand-shadow)" />
-                            <polygon points="145,70 155,55 165,80" fill="#ffffff" filter="url(#brand-shadow)" />
-                            <!-- House with dollar sign -->
-                            <g filter="url(#brand-shadow)">
-                                <path d="M 70 140 L 70 100 L 55 85 L 55 100 L 40 100 L 40 145 L 100 145 L 100 100 L 85 100 L 85 140 Z" fill="#ffffff" />
-                                <text x="70" y="125" font-size="35" font-weight="bold" fill="#2d8a7a" text-anchor="middle" font-family="Arial">$</text>
-                            </g>
-                            <!-- Coins -->
-                            <g filter="url(#brand-shadow)">
-                                <circle cx="105" cy="155" r="10" fill="none" stroke="#ffffff" stroke-width="3" />
-                                <text x="105" y="158" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial">¢</text>
-                                <circle cx="125" cy="160" r="9" fill="none" stroke="#ffffff" stroke-width="2.5" />
-                                <text x="125" y="163" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial">$</text>
-                            </g>
+                            <rect width="512" height="512" rx="115" fill="url(#brand-gradient)" />
+                            <path d="M256 130 L90 280 H140 V390 C140 401 149 410 160 410 H210 V310 H302 V410 H352 C363 410 372 401 372 390 V280 H422 Z" fill="#FFFFFF" filter="url(#brand-shadow)" />
                         </svg>
                     </span>
                     Budget Tracker
